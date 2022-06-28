@@ -1,0 +1,267 @@
+body {
+    font-family: "roboto", sans-serif;
+}
+
+
+.app {
+    padding: 0 5%;
+    background-image: url("../img/background_web.jpg");
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.542);
+}
+
+.heading__logo {
+    line-height: 80px;
+}
+
+.heading__logo img{
+    height: 50px;
+    margin-top: 10px;
+}
+
+.heading__nav {
+    display: flex;
+}
+
+.heading__nav li {
+    padding: 0 12px;
+    line-height: 80px;
+}
+
+.heading__nav li a:hover,
+.heading__nav li a:hover i {
+    color: orange;
+    transition: ease-in 0.2s;
+}
+
+.heading__nav > li:nth-child(6) a,
+.heading__nav > li:nth-child(7) a{
+    background-color: #EF4444;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.heading__nav  li{
+    position: relative;
+}
+
+.heading__navbar {
+    position: absolute;
+    /* height: 500px; */
+    background-color: #27272ab2;
+    display: none;
+    width: max-content;
+    box-shadow: 7px 10px 4px #ccc;
+    padding: 0 100px 0 0;
+} 
+
+.heading__navbar li {
+    height: 50px;
+    line-height: 50px;
+}
+
+.heading__nav li:hover .heading__navbar {
+    display: block;
+    transition: ease-in 0.3s;
+}
+
+/* slider and card */
+
+.slider {
+    height: fit-content;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.slider__card {
+    display: block;
+    background-color: #27272A;
+    height: 400px;
+    width: 30%;
+    padding: 0px 20px 10px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 30px 2px #ccc;
+    display: block;
+}
+
+.slider__card-recharge {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider__card-btn-box {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.slider__card-btn {
+    margin-top: 0;
+    width: 100%;
+    background-color: #18181B;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.slider__card select, input {
+    color: white;
+    background-color: #18181B;
+    padding: 10px 0;
+    border: 1px solid rgba(204, 204, 204, 0.662);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.slider__card-recharge  button {
+    width: 90%;
+    margin: auto;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-size: larger;
+    margin-bottom: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(to bottom, #F3AF00, #FFE600);
+}
+
+.slider__card-recharge  button:hover {
+    opacity: 0.8;
+    transition: ease-in 0.1s;
+}
+
+.slider__card-recharge p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.slider__top-month {
+    display: none;
+}
+
+.slider__img {
+    height: 100%;
+    margin: auto;
+    box-shadow: 2px 2px 30px 2px #ccc;
+}
+
+
+
+/* product */
+
+.product__new h1{
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.product__new h1::after {
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    height: 2px;
+    content: "";
+    left: 50%;
+    bottom: -10px;
+    transform: translateX(-50%);
+}
+
+.product__new-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__new-wrap-item {
+    width: 24%;
+    text-align: center;
+    border: 1px solid rgba(204, 204, 204, 0.532);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 1px #ccc;
+}
+
+.product__new-wrap-item img {
+    width: 100%;
+}
+
+.product__new-wrap-item p {
+    margin: 10px 0;
+}
+
+.product__new-wrap-item button {
+    padding: 5px 15px;
+    background-color: #EF4444;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.product__new-wrap-item button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #18181bc2;
+    margin-top: 50px;
+    padding: 20px 20px;
+
+}
+
+.footer__left {
+    width: 33%;
+}
+
+.footer__left h1 {
+    color: white;
+
+}
+
+.footer__left p {
+    line-height: 25px;
+}
+
+.footer__left ul {
+    margin-top: 30px;
+}
+
+.footer__left ul li:hover a{
+    color: #F3AF00;
+}
+
+
+.footer__center {
+    width: 40%;
+}
+
+.footer__center  {
+    color: white;
+
+}
+
+
+.footer__center img {
+    margin-bottom: 90px;
+}
+
+.footer__center ul li,
+.footer__left ul li {
+    line-height: 25px;
+    text-align: left;
+}
+
+.footer__right {
+    width: 25%;
+}
