@@ -21,3 +21,12 @@ i {
 p {
     color: white;
 }
+
+.btn__one {
+    transition: ease-in-out 0.5s;
+}
+
+.btn__two {
+    transition: ease-in-out 0.5s;
+}
+
